@@ -1,115 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rohith | Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Rohith | Salesforce Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
+
 <body>
 
-    <!-- NAVIGATION -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">Rohith</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<div class="sidebar">
+    <h2 class="logo">Rohith</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certs">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
 
-    <!-- HERO SECTION -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Hello, I'm <span>Rohith</span></h1>
-            <p>Certified Salesforce Developer | OmniStudio Specialist | Apex & LWC Expert</p>
-            <a href="#projects" class="btn">View Projects</a>
+<div class="main">
+
+    <!-- HERO -->
+    <section id="home" class="section hero fade-in">
+        <div class="hero-text">
+            <h1>Salesforce Developer</h1>
+            <h2>OmniStudio • Apex • LWC • Integrations</h2>
+            <p>8+ years of experience delivering secure, scalable Salesforce solutions for enterprise and Ontario Public Service programs.</p>
+            <a href="#projects" class="btn">Explore My Work</a>
+        </div>
+
+        <div class="hero-img">
+            <img src="assets/img/agentforce-activator-professional-services.png" 
+                 alt="Salesforce Agentforce" />
         </div>
     </section>
 
+    <!-- ABOUT -->
+    <section id="about" class="section fade-in">
+        <h2 class="section-title">About Me</h2>
+        <p>
+            I am a Salesforce Developer with strong expertise in OmniStudio, Apex, LWC, Integrations, Flows, 
+            and large-scale public-sector CRM programs. I have hands-on experience shaping digital solutions 
+            for Ontario Ministry of Health—including COVAX, CCM and Long-Term Care modernization—while 
+            aligning with OPS I&IT architecture standards, change management, release governance and 
+            security frameworks.
+        </p>
+    </section>
+
     <!-- SKILLS -->
-    <section id="skills" class="section">
+    <section id="skills" class="section fade-in">
         <h2 class="section-title">Technical Skills</h2>
-        <div class="skills-container">
-            <div class="skill-card">Apex</div>
-            <div class="skill-card">Lightning Web Components</div>
-            <div class="skill-card">Salesforce Admin</div>
-            <div class="skill-card">OmniStudio</div>
-            <div class="skill-card">Git / GitHub</div>
-            <div class="skill-card">Vlocity</div>
-            <div class="skill-card">REST/SOAP APIs</div>
-            <div class="skill-card">SOQL/SOSL</div>
+
+        <div class="cards">
+            <div class="card"><span class="icon">⚡</span>Apex (Classes, Triggers, Batch, Schedulable)</div>
+            <div class="card"><span class="icon">💡</span>Lightning Web Components (LWC)</div>
+            <div class="card"><span class="icon">🔷</span>OmniStudio (OmniScripts, IPs, DRs, FlexCards)</div>
+            <div class="card"><span class="icon">🧩</span>Integration (REST/SOAP, Named Credentials)</div>
+            <div class="card"><span class="icon">🔐</span>Profiles, Permission Sets, Sharing</div>
+            <div class="card"><span class="icon">⚙️</span>Record-Triggered Flows</div>
+            <div class="card"><span class="icon">🛠️</span>GitHub / GitLab CI/CD / Copado</div>
+            <div class="card"><span class="icon">📦</span>Vlocity → OmniStudio Migration</div>
         </div>
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects" class="section bg-light">
-        <h2 class="section-title">Projects</h2>
+    <section id="projects" class="section bg fade-in">
+        <h2 class="section-title">Highlighted Projects</h2>
 
-        <div class="project-grid">
+        <div class="cards">
 
-            <div class="project-card">
-                <h3>OmniStudio Migration (Public Sector)</h3>
-                <p>Migrated OmniScripts, Integration Procedures, DataRaptors, FlexCards from Vlocity Managed Package to OmniStudio Standard Runtime using Apex automation.</p>
+            <div class="card project-card">
+                <h3>OmniStudio Migration – MOH</h3>
+                <p>
+                    Led complete migration from Vlocity Managed Packages to OmniStudio Standard Runtime. 
+                    Automated OmniScript, DR, and IP dependency detection using Apex; deployed end-to-end using GitLab pipelines.
+                </p>
+                <div class="tags">
+                    <span class="tag">OmniStudio</span>
+                    <span class="tag">Apex Automation</span>
+                    <span class="tag">GitLab CI</span>
+                </div>
             </div>
 
-            <div class="project-card">
-                <h3>COVAX Vaccine Management</h3>
-                <p>Configured workflow automation, Flows, LWC components, and data models for provincial vaccine administration and reporting system.</p>
+            <div class="card project-card">
+                <h3>COVAX Province-wide Vaccine System</h3>
+                <p>
+                    Developed LWC, Flows, triggers and security models supporting vaccination, inventory, clinic booking, 
+                    and provincial analytics. High-volume data handling and secure access control.
+                </p>
+                <div class="tags">
+                    <span class="tag">LWC</span>
+                    <span class="tag">Flows</span>
+                    <span class="tag">REST API</span>
+                </div>
             </div>
 
-            <div class="project-card">
-                <h3>Large Data Automation</h3>
-                <p>Created 1M+ Contacts and automated billing integrations using Batch Apex and Salesforce CLI scripting.</p>
+            <div class="card project-card">
+                <h3>High-Volume Contact Automation</h3>
+                <p>
+                    Built scalable Apex batch + CLI workflows generating and cleaning 1M+ Contact records at Rogers, 
+                    including billing integration logic and deduplication automation.
+                </p>
+                <div class="tags">
+                    <span class="tag">Batch Apex</span>
+                    <span class="tag">Data Modeling</span>
+                    <span class="tag">Automation</span>
+                </div>
             </div>
 
         </div>
     </section>
 
     <!-- EXPERIENCE -->
-    <section id="experience" class="section">
-        <h2 class="section-title">Experience</h2>
+    <section id="experience" class="section fade-in">
+        <h2 class="section-title">Professional Experience</h2>
+
         <div class="timeline">
 
-            <div class="timeline-item">
-                <h3>Salesforce Developer – Ministry of Health</h3>
-                <span>2022 – Present</span>
-                <p>OmniStudio migration, LWC, Apex, Flows, CI/CD using GitLab, COVAX, CCM, LTC systems.</p>
+            <div class="exp">
+                <h3>Salesforce Developer — Ministry of Health (Ontario)</h3>
+                <p class="period">2022 – Present</p>
+                <p>
+                    OmniStudio migration, Apex, LWC, Integrations, GitLab CI/CD, public-sector governance, 
+                    cross-ministry collaboration, ITIL alignment, OPS accessibility & security compliance.
+                </p>
             </div>
 
-            <div class="timeline-item">
-                <h3>Salesforce Developer – Rogers</h3>
-                <span>2020 – 2022</span>
-                <p>Batch Apex, integration, Copado pipelines, Power BI embedding, data migration.</p>
+            <div class="exp">
+                <h3>Salesforce Developer — Rogers</h3>
+                <p class="period">2020 – 2022</p>
+                <p>
+                    Batch Apex, Copado pipelines, LWC components, billing system integration, Vlocity configuration, Salesforce CLI automation.
+                </p>
             </div>
 
-            <div class="timeline-item">
-                <h3>Salesforce Developer – NTT Data</h3>
-                <span>2018 – 2020</span>
-                <p>Custom objects, validation rules, SOQL/SOSL, Apex triggers.</p>
+            <div class="exp">
+                <h3>Salesforce Developer — NTT Data</h3>
+                <p class="period">2018 – 2020</p>
+                <p>
+                    Custom objects, Apex triggers, workflows, security models, validation rules, Lightning transitions.
+                </p>
             </div>
 
         </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certs" class="section bg fade-in">
+        <h2 class="section-title">Certifications</h2>
+        <ul class="cert-list">
+            <li>✔ Salesforce Platform Developer I</li>
+            <li>✔ Salesforce Administrator</li>
+            <li>✔ Salesforce JavaScript Developer I</li>
+            <li>✔ OmniStudio Developer</li>
+            <li>✔ Copado Fundamentals I</li>
+        </ul>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section bg-light">
+    <section id="contact" class="section fade-in">
         <h2 class="section-title">Contact</h2>
-        <div class="contact-box">
-            <p>Email: <strong>your-email@example.com</strong></p>
-            <p>LinkedIn: <strong>linkedin.com/in/your-link</strong></p>
-            <p>GitHub: <strong>github.com/RohithSFDCom</strong></p>
-        </div>
+        <p>Email: <strong>youremail@example.com</strong></p>
+        <p>LinkedIn: <strong>linkedin.com/in/yourprofile</strong></p>
+        <p>GitHub: <strong>github.com/RohithSFDCom</strong></p>
     </section>
 
-    <!-- FOOTER -->
     <footer>
-        <p>© 2025 Rohith. All Rights Reserved.</p>
+        <p>© 2025 Rohith — Salesforce Developer Portfolio</p>
     </footer>
+
+</div>
 
 <script src="script.js"></script>
 </body>
