@@ -19,7 +19,7 @@ body {
 
 /* SIDEBAR */
 .sidebar {
-    width: 200px;
+    width: 100px;
     background: #161b22;
     height: 100vh;
     position: fixed;
